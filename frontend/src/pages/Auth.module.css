@@ -1,0 +1,89 @@
+.authPage {
+  display: flex;
+  min-height: 100vh;
+}
+
+.authCard {
+  width: 480px;
+  min-width: 380px;
+  background: var(--white);
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+.brand h1 { font-size: 20px; font-weight: 800; color: var(--green-dark); }
+.brandIcon {
+  width: 44px; height: 44px;
+  background: var(--green-main);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: white;
+}
+
+.title { font-size: 26px; font-weight: 800; margin-bottom: 6px; }
+.subtitle { color: var(--text-light); font-size: 14px; margin-bottom: 28px; }
+
+.form { display: flex; flex-direction: column; gap: 0; }
+
+.inputWrap { position: relative; display: flex; align-items: center; }
+.inputIcon { position: absolute; left: 12px; color: var(--text-light); z-index: 1; }
+.inputWithIcon { padding-left: 38px !important; }
+.eyeBtn {
+  position: absolute; right: 12px;
+  background: none; border: none; cursor: pointer;
+  color: var(--text-light); display: flex; align-items: center;
+  padding: 0;
+}
+.eyeBtn:hover { color: var(--text-dark); }
+
+.submitBtn { width: 100%; justify-content: center; margin-top: 8px; padding: 12px; font-size: 15px; }
+
+.divider {
+  display: flex; align-items: center; gap: 12px;
+  margin: 20px 0; color: var(--text-light); font-size: 13px;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; height: 1px; background: var(--cream-border);
+}
+
+.demoBtn { width: 100%; justify-content: center; padding: 11px; }
+
+.switchText { margin-top: 24px; text-align: center; font-size: 14px; color: var(--text-mid); }
+.switchText a { color: var(--green-main); font-weight: 600; }
+.switchText a:hover { color: var(--green-dark); }
+
+/* Right panel */
+.authIllustration {
+  flex: 1;
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-main) 60%, var(--green-light) 100%);
+  display: flex; align-items: center; justify-content: center;
+  padding: 60px;
+}
+.illustrationContent { max-width: 400px; color: white; }
+.illustrationContent h2 { font-size: 36px; font-weight: 800; margin-bottom: 16px; line-height: 1.25; }
+.illustrationContent p { font-size: 16px; opacity: .85; margin-bottom: 36px; line-height: 1.7; }
+
+.features { display: flex; flex-direction: column; gap: 14px; }
+.featureItem {
+  background: rgba(255,255,255,.15);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 768px) {
+  .authPage { flex-direction: column; }
+  .authCard { width: 100%; padding: 36px 24px; }
+  .authIllustration { display: none; }
+}

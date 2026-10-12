@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.greeting { font-size: 22px; font-weight: 800; }
+
+.streakBadge {
+  display: flex; align-items: center; gap: 6px;
+  background: #fff7ed;
+  border: 1.5px solid #fed7aa;
+  border-radius: 20px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #c2410c;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+}
+.statIcon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.statValue { font-size: 24px; font-weight: 800; line-height: 1; }
+.statLabel { font-size: 13px; color: var(--text-light); margin-top: 2px; }
+.statSub { font-size: 12px; color: var(--text-light); margin-top: 1px; }
+
+.midRow {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.goalCard { display: flex; flex-direction: column; }
+.weekStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+  border-top: 1px solid var(--cream-border);
+  padding-top: 14px;
+}
+.weekStats div { text-align: center; }
+.weekStats div span { font-size: 20px; font-weight: 800; color: var(--green-dark); }
+.weekStats div p { font-size: 11px; color: var(--text-light); margin-top: 2px; }
+
+.chartCard { display: flex; flex-direction: column; }
+
+.bottomRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.deadlinesCard {}
+.deadlineList { display: flex; flex-direction: column; gap: 10px; }
+.deadlineItem {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--cream);
+  border-radius: var(--r-sm);
+  padding: 10px 14px;
+}
+.deadlineSubject { font-weight: 600; font-size: 14px; }
+.deadlineTopic { font-size: 12px; color: var(--text-light); margin-top: 1px; }
+
+.subjectsCard {}
+.subjectList { display: flex; flex-direction: column; gap: 14px; }
+.subjectItem {}
+
+@media (max-width: 900px) {
+  .midRow, .bottomRow { grid-template-columns: 1fr; }
+}

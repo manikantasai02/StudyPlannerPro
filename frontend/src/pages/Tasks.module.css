@@ -1,0 +1,88 @@
+.toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  border: 1.5px solid var(--cream-border);
+  border-radius: var(--r-sm);
+  padding: 8px 12px;
+  flex: 1;
+  min-width: 200px;
+}
+.searchInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: var(--text-dark);
+  width: 100%;
+}
+.searchInput::placeholder { color: var(--text-light); }
+
+.section { margin-bottom: 24px; }
+.sectionTitle { font-size: 13px; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: .6px; margin-bottom: 10px; }
+
+.taskCard {
+  background: var(--white);
+  border: 1.5px solid var(--cream-border);
+  border-radius: var(--r-md);
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: box-shadow .2s;
+}
+.taskCard:hover { box-shadow: var(--shadow-md); }
+.taskCard.done { opacity: .7; }
+
+.taskMain {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.checkBtn { background: none; border: none; cursor: pointer; padding: 2px; flex-shrink: 0; margin-top: 2px; }
+
+.taskInfo { flex: 1; min-width: 0; }
+.taskTop { display: flex; align-items: center; gap: 8px; margin-bottom: 3px; flex-wrap: wrap; }
+.taskSubject { font-weight: 700; font-size: 14px; color: var(--green-dark); }
+.taskTopic { font-size: 14px; color: var(--text-dark); }
+.taskMeta { display: flex; align-items: center; gap: 14px; margin-top: 6px; flex-wrap: wrap; }
+.taskMeta span { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--text-light); }
+
+.taskActions { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+
+.taskExpanded {
+  border-top: 1px solid var(--cream-border);
+  padding: 14px 16px;
+  background: var(--cream);
+}
+.taskNotes { font-size: 13px; color: var(--text-mid); margin-bottom: 14px; line-height: 1.6; }
+
+.docsSection {}
+.docList { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.docItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  border: 1px solid var(--cream-border);
+  border-radius: var(--r-sm);
+  padding: 8px 12px;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}

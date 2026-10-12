@@ -1,0 +1,2 @@
+# SPA rewrite rule so React Router routes (/dashboard, /tasks, etc.) don't 404 on refresh
+/*    /index.html   200

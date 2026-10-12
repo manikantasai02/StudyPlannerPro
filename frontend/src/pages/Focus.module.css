@@ -1,0 +1,61 @@
+.layout { display: grid; grid-template-columns: 1fr 340px; gap: 20px; }
+
+.timerSection {
+  background: var(--white); border: 1px solid var(--cream-border);
+  border-radius: var(--r-lg); padding: 32px;
+  display: flex; flex-direction: column; align-items: center; gap: 24px;
+}
+
+.presets { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.preset {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 8px 18px; border-radius: var(--r-sm);
+  border: 1.5px solid var(--cream-border); background: var(--cream);
+  cursor: pointer; transition: all .18s;
+}
+.preset span { font-size: 14px; font-weight: 700; }
+.preset small { font-size: 11px; color: var(--text-light); }
+.preset:hover { border-color: var(--green-main); background: var(--green-bg); }
+.activePreset { border-color: var(--green-main) !important; background: var(--green-bg) !important; color: var(--green-dark); }
+.preset:disabled { opacity: .5; cursor: not-allowed; }
+
+.taskSelect { width: 100%; max-width: 400px; }
+
+.timerCircle { position: relative; display: flex; align-items: center; justify-content: center; }
+.timerDisplay {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; display: flex; flex-direction: column; gap: 4px;
+}
+.timerTime { font-size: 48px; font-weight: 800; color: var(--text-dark); font-variant-numeric: tabular-nums; }
+.timerStatus { font-size: 14px; color: var(--text-light); font-weight: 500; }
+
+.controls { display: flex; align-items: center; gap: 10px; }
+
+.selectedTaskInfo {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--green-bg); border: 1px solid var(--green-muted);
+  border-radius: var(--r-sm); padding: 10px 14px;
+  font-size: 13px; color: var(--green-dark); width: 100%; max-width: 400px;
+}
+
+.logSection { display: flex; flex-direction: column; gap: 14px; }
+.logCard { flex: 1; }
+.emptyLog {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 8px; padding: 32px 0; color: var(--text-light);
+}
+
+.logList { display: flex; flex-direction: column; gap: 10px; }
+.logItem {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--cream); border-radius: var(--r-sm); padding: 10px 12px;
+}
+.logDot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+.tipsCard { padding: 20px; }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .logSection { order: -1; }
+}

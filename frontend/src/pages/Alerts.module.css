@@ -1,0 +1,16 @@
+.criticalBanner {
+  display: flex; align-items: flex-start; gap: 14px;
+  background: #fef2f2; border: 1.5px solid #fca5a5;
+  border-radius: var(--r-md); padding: 16px 20px;
+  margin-bottom: 20px; color: #991b1b;
+}
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; }
+.alertSection {}
+.alertHeader { border-left: 4px solid; padding-left: 12px; margin-bottom: 14px; }
+.alertTitle { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; }
+.alertCount { padding: 2px 9px; border-radius: 20px; font-size: 12px; font-weight: 700; }
+.alertItems { display: flex; flex-direction: column; gap: 8px; }
+.alertItem { display: flex; align-items: center; justify-content: space-between; background: var(--cream); border-radius: var(--r-sm); padding: 10px 12px; }
+.goalStatus { margin-bottom: 14px; }
+.infoCard { border-left: 4px solid #0891b2; }
+@media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }

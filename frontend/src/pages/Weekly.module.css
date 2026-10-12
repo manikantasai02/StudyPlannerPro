@@ -1,0 +1,98 @@
+.miniRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid var(--cream-border);
+  border-radius: var(--r-md);
+  padding: 16px;
+}
+.miniDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.miniToday .miniDayName { color: var(--green-main); font-weight: 800; }
+.miniDayName { font-size: 12px; font-weight: 600; color: var(--text-light); }
+.miniMins { font-size: 11px; color: var(--text-dark); font-weight: 600; }
+.miniBar {
+  width: 6px; height: 40px;
+  background: var(--cream-border);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.miniFill {
+  width: 100%;
+  background: var(--green-main);
+  border-radius: 4px;
+  transition: height .4s;
+}
+
+.weekGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dayCol {
+  background: white;
+  border: 1.5px solid var(--cream-border);
+  border-radius: var(--r-md);
+  padding: 12px 10px;
+  min-height: 180px;
+}
+.todayCol { border-color: var(--green-main); box-shadow: 0 0 0 2px var(--green-muted); }
+.pastCol { opacity: .7; }
+
+.dayHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--cream-border);
+  padding-bottom: 8px;
+}
+.dayName { font-size: 13px; font-weight: 800; color: var(--text-dark); }
+.dayDate { font-size: 11px; color: var(--text-light); }
+
+.dayTasks { display: flex; flex-direction: column; gap: 6px; }
+.noTasks { font-size: 12px; color: var(--cream-border); text-align: center; margin-top: 16px; }
+
+.dayTask {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  background: var(--cream);
+  border-radius: 8px;
+  padding: 7px 8px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.dayTask:hover { background: var(--green-bg); }
+.doneTask { opacity: .55; }
+
+.dayTaskSubject { font-size: 12px; font-weight: 700; color: var(--green-dark); }
+.dayTaskTopic { font-size: 11px; color: var(--text-mid); margin-bottom: 3px; }
+
+.unscheduled { margin-top: 4px; }
+.unschedChip {
+  background: var(--cream-dark);
+  border: 1px solid var(--cream-border);
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 13px;
+}
+
+@media (max-width: 960px) {
+  .weekGrid { grid-template-columns: repeat(3, 1fr); }
+  .miniRow { display: none; }
+}
+@media (max-width: 600px) {
+  .weekGrid { grid-template-columns: 1fr 1fr; }
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "9ca92922-cb40-478c-a26e-251affaa8d36",
+    "userId": "demo-user-001",
+    "date": "2026-10-05",
+    "minutesStudied": 99,
+    "tasksCompleted": 1,
+    "focusSessions": 3,
+    "subjects": [
+      "Physics"
+    ]
+  },
+  {
+    "id": "7b2fdeb5-d5c7-4815-a33d-d530778192da",
+    "userId": "demo-user-001",
+    "date": "2026-10-06",
+    "minutesStudied": 111,
+    "tasksCompleted": 0,
+    "focusSessions": 2,
+    "subjects": [
+      "Mathematics"
+    ]
+  },
+  {
+    "id": "14b2cfd1-866c-4849-8acb-49027c53a04f",
+    "userId": "demo-user-001",
+    "date": "2026-10-07",
+    "minutesStudied": 80,
+    "tasksCompleted": 1,
+    "focusSessions": 2,
+    "subjects": [
+      "English"
+    ]
+  },
+  {
+    "id": "c899187f-c8b2-40ff-bec6-d62a2964eb88",
+    "userId": "demo-user-001",
+    "date": "2026-10-08",
+    "minutesStudied": 90,
+    "tasksCompleted": 0,
+    "focusSessions": 1,
+    "subjects": [
+      "Computer Science"
+    ]
+  },
+  {
+    "id": "682f195c-693c-4d47-924a-1deb1821e6e5",
+    "userId": "demo-user-001",
+    "date": "2026-10-09",
+    "minutesStudied": 46,
+    "tasksCompleted": 1,
+    "focusSessions": 3,
+    "subjects": [
+      "Chemistry"
+    ]
+  },
+  {
+    "id": "edcb0adc-6162-49fd-a7ad-05ffb68ec410",
+    "userId": "demo-user-001",
+    "date": "2026-10-10",
+    "minutesStudied": 106,
+    "tasksCompleted": 0,
+    "focusSessions": 2,
+    "subjects": [
+      "Physics"
+    ]
+  },
+  {
+    "id": "66968520-2c79-4e47-9d75-50659603d99f",
+    "userId": "demo-user-001",
+    "date": "2026-10-11",
+    "minutesStudied": 46,
+    "tasksCompleted": 1,
+    "focusSessions": 1,
+    "subjects": [
+      "Mathematics"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "demo-user-001",
+    "name": "Demo Student",
+    "email": "demo@studyplanner.com",
+    "password": "$2a$10$qXaKF0d9ww/GtUBx9iLVj.eLIqYIMONlSCKCGDk9xfltStvpvPI5C",
+    "avatar": "",
+    "weeklyGoal": 600,
+    "alertEmail": true,
+    "alertDeadline": true,
+    "alertWeekly": true,
+    "createdAt": "2026-10-11T17:18:26.636Z"
+  }
+]
